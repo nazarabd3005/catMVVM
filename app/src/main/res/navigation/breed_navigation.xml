@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/breed_navigation"
+  app:startDestination="@id/breedDropdownListFragment">
+  <action
+    android:id="@+id/action_breedDropdownListFragment_to_breedDetailFragment"
+    app:launchSingleTop="true"
+    app:destination="@id/breedDetailFragment">
+    <argument
+      android:name="id"
+      app:argType="string" />
+    <argument
+      android:name="name"
+      app:argType="string" />
+  </action>
+  <fragment
+    android:id="@+id/breedDropdownListFragment"
+    android:name="com.nazar.theforesttest.ui.breedlist.BreedDropdownListFragment"
+    tools:layout="@layout/fragment_breed_dropdown_list">
+
+  </fragment>
+  <fragment
+    android:id="@+id/breedDetailFragment"
+    android:name="com.nazar.theforesttest.ui.breeddetail.BreedDetailFragment"
+    tools:layout="@layout/fragment_breed_detail">
+    <argument
+      android:name="id"
+      app:argType="string" />
+    <argument
+      android:name="name"
+      app:argType="string" />
+  </fragment>
+</navigation>
