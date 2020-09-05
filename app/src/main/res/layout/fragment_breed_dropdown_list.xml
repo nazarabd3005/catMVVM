@@ -36,20 +36,30 @@
 
   </com.google.android.material.textfield.TextInputLayout>
 
-  <TextView
+  <ImageView
     android:id="@+id/text_view_breed_name"
-    android:text="@string/click_here"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:src="@drawable/cat_me"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    app:tint="@color/colorPrimary"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"/>
+  <TextView
+    app:layout_constraintBottom_toTopOf="@id/text_view_breed_name"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:textColor="@color/colorPrimary"
+    android:text="HELLO FRIENDS..."
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
   <com.jem.easyreveal.layouts.EasyRevealFrameLayout
     android:id="@+id/holder_loader"
     android:layout_width="match_parent"
     android:background="@color/colorPrimary"
     app:clipPathProvider="wave"
+    tools:visibility="gone"
     app:revealAnimationDuration="500"
     app:hideAnimationDuration="1000"
     android:visibility="@{viewmodel.breeds.status == Status.SUCCESS ? View.GONE : View.VISIBLE}"

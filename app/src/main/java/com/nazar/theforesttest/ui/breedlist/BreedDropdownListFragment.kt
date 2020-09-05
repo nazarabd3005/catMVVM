@@ -9,8 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.nazar.theforesttest.R
 import com.nazar.theforesttest.databinding.FragmentBreedDropdownListBinding
 import com.nazar.theforesttest.utils.hiltNavGraphViewModel
-import com.rommansabbir.animationx.AnimationX
-import com.rommansabbir.animationx.Attention
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable

@@ -57,7 +57,6 @@ dependencies {
     implementation 'androidx.fragment:fragment-ktx:1.2.5'
     implementation("io.coil-kt:coil:0.13.0")
     implementation 'com.github.Chrisvin:EasyReveal:1.2'
-    implementation 'com.github.rommansabbir:AnimationX:1.0.1'
 
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'

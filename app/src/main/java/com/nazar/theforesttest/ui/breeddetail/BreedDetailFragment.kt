@@ -4,17 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import com.nazar.theforesttest.R
 import com.nazar.theforesttest.core.utils.Status
 import com.nazar.theforesttest.databinding.FragmentBreedDetailBinding
-import com.rommansabbir.animationx.AnimationX
-import com.rommansabbir.animationx.Attention
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable
